@@ -7,6 +7,7 @@ function App() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [idade, setIdade] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,12 +15,14 @@ function App() {
     db.collection('usuarios').add({
       name: name,
       email: email,
-      phone: phone
+      phone: phone,
+      idade: idade
     })
     .then(() => {
       setName('');
       setEmail('');
       setName('');
+      setIdade('');
       alert('Usuário adicionado com sucesso!');
     })
     .catch((error) => {
@@ -48,6 +51,12 @@ function App() {
             placeholder="Telefone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
+          />
+           <input
+            type="number"
+            placeholder="Idade"
+            value={idade}
+            onChange={(e) => setIdade(e.target.value)}
           />
           <button type="submit">Enviar</button>
         </form>
