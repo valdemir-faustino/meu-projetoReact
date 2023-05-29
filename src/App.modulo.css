@@ -1,0 +1,50 @@
+.App {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para o título do formulário */
+  .App h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para os campos de entrada */
+  .App input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  /* Estilo para o botão de envio */
+  .App button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o botão de envio quando o cursor estiver sobre ele */
+  .App button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo para mensagens de alerta */
+  .App .alert {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    border-radius: 3px;
+  }

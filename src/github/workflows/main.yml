@@ -1,0 +1,20 @@
+name: Firebase Deploy
+
+on:
+  push:
+    branches:
+      - master  # altere para o nome da branch principal do seu projeto
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Deploy to Firebase Hosting
+        run: firebase deploy --only hosting
